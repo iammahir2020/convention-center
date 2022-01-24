@@ -102,22 +102,11 @@
     </header>
     <main>
         <!-- Toast Section starts  -->
-        <section class="container my-5">
+        <!-- <section class="container my-5">
             <h1 class="text-center fw-bolder display-6 display-sm-5 display-md-3 display-lg-2">Toast Section</h1><br><br><br>
-            <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
 
-        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-                <i class="fas fa-gift me-2"></i>
-                20% off on next booking.
-            </div>
-        </div>
-        </div>
-        </section>
+        
+        </section> -->
         <!-- Toast Section ends  -->
         <!-- Our Packages Section Starts  -->
         <section class="container my-5" id="packages">
@@ -316,20 +305,28 @@
         <!-- Footer Section Ends  -->
     </footer>
     <!-- ---------------------------  -->
+    <!-- Code for showing toast starts  -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+              <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+              <i class="fas fa-gift me-2"></i>
+              20% off on next booking.
+          </div>
+      </div>
+      </div>
+    <!-- Code for showing toast ends  -->
     <!-- Bootstrap JS script  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- JS script for activating toast message  -->
     <script>
-        var toastTrigger = document.getElementById('liveToastBtn')
-        var toastLiveExample = document.getElementById('liveToast')
-        if (toastTrigger) {
-        toastTrigger.addEventListener('click', function () {
-        var toast = new bootstrap.Toast(toastLiveExample)
-
-        toast.show()
-    })
-}
+      var toastEList = [].slice.call(document.querySelectorAll('.toast'))
+      var toastList = toastEList.map(function(toastEl){
+        return new bootstrap.Toast(toastEl);
+      });
+      toastList.forEach(toast => toast.show());
     </script>
-    <!-- ---------------------------  -->
 </body>
 </html>
