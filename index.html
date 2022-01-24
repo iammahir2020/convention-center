@@ -29,17 +29,20 @@
                     </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item mx-4">
+                      <li class="nav-item mx-3">
                         <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
                       </li>
-                      <li class="nav-item mx-4">
+                      <li class="nav-item mx-3">
                         <a class="nav-link text-dark" href="#packages">Our Packages</a>
                       </li>
-                      <li class="nav-item mx-4">
+                      <li class="nav-item mx-3">
                         <a class="nav-link text-dark" href="#faq">FAQ</a>
                       </li>
-                      <li class="nav-item mx-4">
+                      <li class="nav-item mx-3">
                         <a class="nav-link text-dark" href="#subscribe">Subscribe</a>
+                      </li>
+                      <li class="nav-item mx-3">
+                        <a class="nav-link text-dark" href="#gallery">Gallery</a>
                       </li>
                     </ul>
                   </div>
@@ -101,15 +104,9 @@
         <!-- Carousal Design Ends  -->
     </header>
     <main>
-        <!-- Toast Section starts  -->
-        <!-- <section class="container my-5">
-            <h1 class="text-center fw-bolder display-6 display-sm-5 display-md-3 display-lg-2">Toast Section</h1><br><br><br>
-
-        
-        </section> -->
-        <!-- Toast Section ends  -->
         <!-- Our Packages Section Starts  -->
         <section class="container my-5" id="packages">
+          <br><br>
             <h1 class="text-center fw-bolder display-6 display-sm-5 display-md-3 display-lg-2">Our Package</h1><br><br><br>
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -207,6 +204,7 @@
         <!-- Our Packages Section Ends  -->
         <!-- Faq Section Starts  -->
         <section class="container my-5" id="faq">
+          <br><br>
             <h1 class="text-center fw-bolder display-6 display-sm-5 display-md-3 display-lg-2">Frequently Asked Questions</h1><br><br><br>
             <div class="row">
               <div class="order-1 order-sm-1 order-md-0 order-lg-0 col-12 col-md-6 col-lg-6">
@@ -248,12 +246,12 @@
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         Accordion Item #4
                       </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                       </div>
@@ -262,13 +260,14 @@
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-6">
-                <img class="mx-auto w-100" src="images/people.png" alt="">
+                <img class="mx-auto w-100 mb-5" src="images/people.png" alt="">
               </div>
             </div>
         </section>
         <!-- Faq Section Ends  -->
         <!-- Subscribe Section Starts  -->
         <section class="container my-5" id="subscribe">
+          <br><br>
           <h1 class="text-center fw-bolder display-6 display-sm-5 display-md-3 display-lg-2">Subscribe to Our Newsletter</h1>
           <p class="text-center">Signup for our newsletter and stay updated with all the latest deals and packages</p> <br><br><br>
           <div class="row">
@@ -276,19 +275,56 @@
               <img class="w-100 mx-auto" src="images/people.png" alt="">
             </div>
             <div class="col-12 col-md-6 col-lg-6  mb-5">
-                <div class="form-floating">
+                <div class="form-floating mb-3">
                   <input type="text" class="form-control" id="floatingName" placeholder="Name">
-                  <label for="floatingName">Enter Your Name</label>
+                  <label for="floatingName">Enter Your Full Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingName" placeholder="number">
+                  <label for="floatingName">Enter Your Phone Number</label>
                 </div>
                   <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Enter Your Email</label>
+                    <label for="floatingInput">Enter Your Email Address</label>
                   </div>
                 <button type="submit" class="btn btn-primary w-100">Subscribe</button>
             </div>
           </div>
         </section>
         <!-- Subscribe Section Ends  -->
+        <!-- Gallery Section Starts  -->
+        <section class="container my-5" id="gallery">
+          <br><br>
+          <h1 class="text-center fw-bolder display-6 display-sm-5 display-md-3 display-lg-2">Photo Gallery</h1>
+          <br><br>
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4  g-2 g-md-3 g-lg-4">
+            <div class="col">
+              <img class="w-100" src="gallery/photo-2.jpg" alt="">
+            </div>
+            <div class="col">
+              <img class="w-100" src="gallery/photo-3.jpg" alt="">
+            </div>
+            <div class="col">
+              <img class="w-100" src="gallery/photo-4.jpg" alt="">
+            </div>
+            <div class="col">
+              <img class="w-100" src="gallery/photo-5.jpg" alt="">
+            </div>
+            <div class="col">
+              <img class="w-100" src="gallery/photo-6.jpg" alt="">
+            </div>
+            <div class="col">
+              <img class="w-100" src="gallery/photo-7.jpg" alt="">
+            </div>
+            <div class="col">
+              <img class="w-100" src="gallery/photo-8.jpg" alt="">
+            </div>
+            <div class="col">
+              <img class="w-100" src="gallery/photo-9.jpg" alt="">
+            </div>
+          </div>
+        </section>
+        <!-- Gallery Section Ends  -->
     </main>
     <footer class="bg-dark" height="400">
         <!-- Footer Section Starts  -->
