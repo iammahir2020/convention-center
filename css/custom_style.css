@@ -5,8 +5,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.carousel-img {
+  height: 584px;
+}
+
 @media only screen and (max-width: 575px) {
   .small_text {
     font-size: 24px;
+  }
+  .carousel-img {
+    height: 485px;
   }
 }
